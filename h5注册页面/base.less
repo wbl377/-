@@ -1,0 +1,308 @@
+@r:40rem;
+
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  -webkit-appearance: none;
+  resize: none;
+}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 设置HTML5元素为块 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+/* 图片自适应 */
+img {
+  /* width: 100%; */
+  height: auto;
+  /* width: auto\9; ie8 */
+  -ms-interpolation-mode: bicubic;
+  /*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+em,i {
+  font-style: normal;
+}
+strong {
+  font-weight: normal;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul,ol {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+  font-family: Microsoft YaHei;
+}
+img {
+  border: none;
+}
+html {
+  font-size: 40px;
+  min-width: 319px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.back(@img){
+    background:url('images/@{img}') no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+.registerWrap{
+    width:100%;
+    .wrapDiv1{
+        width:100%;
+        height:635/@r;
+        .back('banner.png')
+    }
+    .wrapDiv2{
+        width:100%;
+        height:800/@r;
+        
+        .back('you_wrapBg.png');
+        .inWrap{
+            width:682/@r;
+            height:687/@r;
+            background:#6538dd;
+            margin:0 auto;
+            padding:40/@r 0 0 40/@r;
+            border-radius:40/@r;
+            -webkit-border-radius:40/@r;
+        }
+        .inputBox{
+            margin-bottom:32/@r;
+            position:relative;
+            .input_box{
+                width:590/@r;
+                height:80/@r;
+                background:#fff;
+                font-size:26/@r;
+                border-radius:20/@r;
+                -webkit-border-radius:20/@r;
+                padding-left:40/@r;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                outline: none;
+            }
+            .input_short{
+                width:300/@r;
+                height:80/@r;
+                background:#fff;
+                float:left;
+                font-size:26/@r;
+                border-radius:20/@r;
+                -webkit-border-radius:20/@r;
+                padding-left:40/@r;
+                outline: none;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .imgCode{
+                float:left;
+                margin-left:36/@r;
+                width:254/@r;
+                height:80/@r;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            input::-webkit-input-placeholder {
+              color: #bfbfbf;
+              font-size:28/@r;
+              line-height:38/@r;
+            }
+            .inputBtn{
+                position:absolute;
+                top:24/@r;
+                right:112/@r;
+                font-size:24/@r;
+                background:transparent;
+                color:#4f8ff9;
+                outline: none;
+            }
+            .toastTip{
+              position:absolute;  
+              font-size:22/@r;
+              color:#ff3838;
+              bottom:-30/@r;
+              left:15/@r;
+              display:none;
+            }
+        }
+        .warpcheck{
+            padding:10/@r 0 0 40/@r;
+            box-sizing: border-box;
+            font-size: 0;
+            .checkContent{
+                display:inline-block;
+                position:relative;
+                width:32/@r;
+                height:32/@r;
+                margin-right:20/@r;
+                input[type="checkbox"]{
+                    position:absolute;
+                    width:32/@r;
+                    height:32/@r;
+                    top:0/@r;
+                    left:0;
+                    opacity:0;
+                }
+                label{
+                   position:absolute;
+                   width:32/@r;
+                   height:32/@r;
+                   top:0/@r;
+                   left:0;
+                   .back('checkedFalse.png')
+                }
+               input[type='checkbox']:checked + label{
+                   .back('checkedTrue.png')
+                }
+            }
+            
+            .book{
+                font-size:24/@r;
+                color:#fff;
+                vertical-align: top;
+                line-height:36/@r;
+            }
+        }
+        .passBtn{
+            width:590/@r;
+            height:85/@r;
+            display:block;
+            margin-top:50/@r;
+            .back('passBtn.png');
+        }
+        
+        
+    }
+    .wrapDiv3{
+        width:100%;
+        height:279/@r;
+        padding-top:70/@r;
+        .back('you_bottomBg.png'); 
+    }
+    .SucwrapDiv1{
+       width:100%;
+       height:420/@r;
+       .back('successBg1.png');
+    }
+    .SucwrapDiv2{
+       width:100%;
+       height:480/@r;
+       .back('successBg2.png');
+       .regSucImg1{
+            width:580/@r;
+            height:424/@r;
+            margin-left:110/@r;
+            .back('successImg.png')
+        }
+        .regSucImg2{
+            width:580/@r;
+            height:464/@r;
+            margin-left:110/@r;
+            .back('successImg2.png')
+        }
+        
+    }
+    .SucwrapDiv3{
+       width:100%;
+       height:434/@r;
+       .back('successBg3.png');
+       padding-top:140/@r;
+       .downloadBtn{
+            display:block;
+            margin:0 auto;
+            width:430/@r;
+            height:100/@r;
+            .back('downloadBtn.png')
+        }
+    }
+}
+.layerWrap{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.8);
+    display:none;
+    .layerContent{
+        width:480/@r;
+        height:320/@r;
+        position:absolute;
+        left:50%;
+        top:50%;
+        padding-top:150/@r;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        .back('layerBg.png');
+        i{
+            display:block;
+            width:62/@r;
+            height:62/@r;
+            .back('closed.png');
+            position:absolute;
+            bottom:-80/@r;
+            left:50%;
+            transform:translateX(-50%);
+            -webkit-transform:translateX(-50%);
+        }
+        p{
+            text-align:center;
+            color:#666;
+            font-size:28/@r;
+        }
+        .sureBtn{
+            display:block;
+            width:100%;
+            height:86/@r;
+            color:#50a1ef;
+            font-size:36/@r;
+            position:absolute;
+            bottom:0;
+            left:0;
+            text-align:center;
+            line-height:86/@r;
+            border-top:2/@r solid #e6e6e6;
+        }
+    }
+}
