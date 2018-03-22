@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>递归求20项的值</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//24.（函数，递归）数列如下：1，2，3，6，9，18，27… ，求第20项的值是多少？
+	function sl(num){
+		if(num<=0){
+			document.write('请输入大于0的数')
+		}
+		if(num==1){
+			return 1;
+		}
+		if(num==2){
+			return 2;
+		}
+		if(num%2==0){
+			return num = sl(num-1) + sl(num-2) + sl(num-3)
+		}else{
+			return num = sl(num-1) + sl(num-2)
+		}	
+	}
+	var cc = sl(5)
+	document.write(cc)
+	
+</script>

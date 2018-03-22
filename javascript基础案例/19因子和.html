@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>正数的因子和</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//19（函数）定义一个函数，该函数用于计算一个正数的因子和（比如6的因子和是1+2+3+6=12）
+	function yingzi(num){
+		var number = 0;
+		for(var i=1;i<=num;i++){
+			if(num%i == 0){
+				//'document.write(i+'<br>')
+				number = number + i;
+			}
+		}
+		document.write(number)
+	}
+	yingzi(24)
+</script>

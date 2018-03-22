@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>判断字符的长度以及是哪个字符</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	var str="fnushfuehf,fewf,wefwefew,ffbsnsuixfi,";
+	var o={};
+	var max=0;
+	for(var i=0;i<str.length;i++){
+	    var char=str.charAt(i);
+	    if(o[char]){
+	        o[char]++;
+	    }else{
+	        o[char]=1;
+	    }
+	}
+	console.log(o)
+	for(var key in o){
+	    if(max<o[key]){
+	        max=o[key];
+	    }
+	}
+	for(var key in o){
+	    if(max==o[key]){
+	        console.log("最多"+max,"字符是："+key);
+	    }
+	}
+</script>

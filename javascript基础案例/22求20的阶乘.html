@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>求20的阶乘</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//22.（函数，递归）求20的阶乘（20！）
+	function qjc(num){
+		if(num==1){
+			return 1;
+		}
+		
+		if(num>1){
+			return num = num*qjc(num-1);
+		}else{
+			document.write('请输入一个大于0的整数')
+		}	
+	}
+	
+	var cc = qjc(3)
+	document.write(cc)
+</script>

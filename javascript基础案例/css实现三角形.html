@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css实现三角形的实例</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.demo{
+				width:100px;
+				height:100px;
+				border:2px solid #000;
+				background:#fff;
+				margin:50px 0 0 50px;
+				position:relative;
+			}
+			.demo:before{
+				content:' ';
+				width:0px;
+				height:0px;
+				border:10px solid transparent;
+				border-left-color:#000;
+				position:absolute;
+				left:100%;
+				top:20px;
+			}
+			.demo:after{
+				content:' ';
+				width:0px;
+				height:0px;
+				border:8px solid transparent;
+				border-left-color:#fff;
+				position:absolute;
+				left:100%;
+				top:22px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo"></div>
+	</body>
+</html>

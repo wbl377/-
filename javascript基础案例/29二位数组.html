@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>二维数组，求平均值，最大值，最小值及四周边上的和及两个下标都为砌筑的</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//29.（二维数组）定义一个二维数组（3行4列）
+	//输入任意12个数值，求该数组的平均值，最大值，最小值，
+	//“4周边上”元素的和，以及两个下标均为奇数的和。
+	
+	var arry = [
+			[35,25,16,56],
+			[58,69,48,39],
+			[29,24,68,57]
+		];
+	var num = 0;
+	var avg = 0;
+	var s=0;
+	var max = arry[0][0];
+	var min = arry[0][0];
+	for(var i=0;i<arry.length;i++){
+		for(var j=0; j<arry[i].length;j++){
+			num++;
+			avg +=  arry[i][j];
+			//console.log(arry[0][0])
+			
+			if(max <= arry[i][j]){
+				max = arry[i][j]
+			}
+			if(min >= arry[i][j]){
+				min = arry[i][j]
+			}	
+		}
+	}
+	s = avg / num;
+	document.write(s+'<br>');
+	
+	document.write(min+'<br>');
+	
+	document.write(max)
+	
+	
+	
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>红白黑球</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//15.（循环，逻辑分析）有红、白、黑三种球若干个，其中红、白球共25个，白、黑球共31个，红、黑球共28个，
+	//求这三种球各多少个？
+	for(var red = 0;red<=25;red++){
+		for(var white = 0; white<= 25;white++){
+			for(var black = 0; black <= 28; black++){
+				if(red+white==25 && black+white==31 && red+black==28){
+					document.write(red+','+ black+',' + white )
+				}
+			}
+		}
+	}
+</script>

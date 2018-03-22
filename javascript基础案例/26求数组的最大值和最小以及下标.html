@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>求数组的最大值及最小值以及下标</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//26.（数组）定义一个数组，输入7个任意的数值，求该数组中的最大值和最小值以及各自的下标各为多少？
+	var arry = [105,15,68,48,42,34,26];
+	var max ;
+	var min ;
+	max = arry[0];
+	min = arry[0];
+	var n1;
+	var n2;
+	for(var i=0;i<arry.length;i++){
+		if(arry[i]>=max){
+			max = arry[i];
+			n1 = i;
+		}
+		if(arry[i]<=min){
+			min = arry[i];
+			n2 = i;
+		}
+	}
+	document.write('最大值：'+max+'下标为'+n1);
+	document.write('最小值：'+min+'下标为'+n2)
+</script>

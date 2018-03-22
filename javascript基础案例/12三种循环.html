@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>三种循环的平方和</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//使用3种循环语句计算1到100的所有数的平方和。
+	//第一种for循环
+	var num1 = 0;
+	for(var i = 0;i<=100;i++){
+		num1 = num1+i*i
+	}
+	document.write(num1);
+	document.write('<br/>')
+	
+	
+	
+	
+	//第二种while循环
+	var num2 = 0;
+	var i = 1;
+	while(i<=100){
+		num2 = num2+i*i;
+		i++;
+	}
+	document.write(num2);
+	document.write('<br/>')
+	
+	
+	//第三种do while循环
+	var num3 = 0;
+	var i = 0;
+	do{
+		num3 = num3+i*i;
+		i++;
+	}while(i<100)
+	
+	document.write(num3)
+</script>

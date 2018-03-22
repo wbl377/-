@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>判断2000-3000的闰年</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	
+    //输出从2000年（含）到3000年（含）间的所有闰年。
+	//闰年能被4整除且不能被100整除，或能被400整除。
+	var n=0;
+	for(var i = 2000;i<=3000;i++){
+		if(i%4 == 0 && i%100 != 0 || i%400 == 0){
+			n++
+			console.log(i);
+			
+		}	
+	}
+	
+	console.log(n)
+	
+</script>

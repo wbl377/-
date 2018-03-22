@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>递归求20项的值</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//23.（函数，递归）数列如下：1，2，4，8，16，32… ，求第20项的值是多少？
+	function shulie(num){
+		if(num==1){
+			return 1;
+		}
+		
+		if(num>1){
+			return num = 2*shulie(num-1)
+		}else{
+			document.write('请输入一个正整数')
+		}	
+	}
+	
+	var num = 3;
+	var s = shulie(num);
+	document.write('第'+num+'的值是'+s)
+</script>

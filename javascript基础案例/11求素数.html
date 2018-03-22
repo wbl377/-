@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>求2-200之间的素数</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//输出2-200之间的所有素数（素数就是只能被1和其本身整除的数）。
+	var flag = true;
+	for(var i=2;i<=200;i++){
+		for(var j=2;j<i;j++){
+			if(i%j == 0){
+				flag = false;
+				break;
+			}
+		}
+		if(flag){
+				document.write('素数为:' + i + '<br />');
+		}
+		flag=true;
+	}
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>比数组的平均数大的值以及小的值</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//27.（数组）定义一个数组，输入8个任意的数值，求该数组中大于平均值的数的个数，和小于平均值的个数。
+	var arry = [12,45,23,25,65,58,47,38];
+	var num = 0;
+	var max=0;
+	var min=0;
+	for(var i=0;i<arry.length;i++){
+		num += parseInt(arry[i]);
+	}
+	
+	var age = Math.round(num / arry.length);
+	for(var i=0;i<arry.length;i++){
+		if(age > arry[i]){
+			min++;
+		}
+		if(age < arry[i]){
+			max++;
+		}
+	}
+	
+	document.write(max + '<br>' +min)
+</script>

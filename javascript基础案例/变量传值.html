@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>变量传值</title>
+	</head>
+	<body>
+		<!--（赋值传值/引用传值）读程序，写结果：-->
+	</body>
+</html>
+<script>
+	//第一部分
+	var v1 = 'abs';
+	var v2 = v1;
+	var v2 = '123' + v2;
+	console.log(v1);    //abs
+	console.log(v2);    //123abs
+	
+	
+	//第二部分
+	var a = {name:'张三', age:22};
+	var b = a; 
+	console.log(b.age)  //22
+	b.name = 'wangwu';
+	console.log(a.name)  //23
+</script>

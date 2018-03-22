@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>判断是否是闰年</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//17.	（函数，逻辑）定义一个函数，该函数用于判断所给的年份数是否是一个闰年。
+	//闰年的条件：被4整除不能被100整除 且 能被400整除；
+	function year(num){
+		if(num%4==0 && num%100!=0 || num%400==0){
+			document.write('是润年')
+		}else{
+			document.write('不是润年')
+		}
+	}
+	year(2013)
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>判断字符</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+
+	//35.（字符）判断一个字符（比如”a”）是否出现在另一个字符（比如”2340sadfj2affa2”）中，如果出现，并求出现了几次。
+	var str = '2a40sadfj2affa2';
+	str = str.split('');
+	var n =0;
+	for(var i=0;i<str.length;i++){
+		if(str[i] == 'a' ){
+			n++
+		}
+	}
+	document.write(n)
+	
+	
+	
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>打印标题</title>
+	</head>
+	<body>
+		<!--1.（基础，输出）网页一打开，要求依次弹出数字1-6，并且每弹出一次，页面就显示出对应的一个标题行
+		（即从h1-h6）。注意，页面中不应该出现h1-h6的标签，而应该是由js写出来的。-->
+	</body>
+</html>
+<script>
+	sweet();
+	function sweet(){
+		for(var i=1;i<=6;i++){
+			alert(i);
+			document.write('<h'+i+'>'+ i +'</h'+i+'>');
+		}
+	}
+</script>
+   

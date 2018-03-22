@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3和5的倍数替换</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//13.	（循环，简单逻辑）写一个程序打印1到100这些数字。但是遇到数字为3的倍数的时候，打印“Fizz”替代数字，
+	//5的倍数用“Buzz”代替，既是3的倍数又是5的倍数打印“abcde”。
+	
+	for(var i=1;i<=100;i++){
+		if(i%3==0&&i%5==0){
+			document.write('abcde'+'<br/>')
+		}else if(i%5==0){
+			document.write('Buzz'+'<br/>')
+		}else if(i%3==0){
+			document.write('Fizz'+'<br/>')
+		}else{
+			document.write(i+'<br/>')
+		}
+		
+	}
+	
+</script>

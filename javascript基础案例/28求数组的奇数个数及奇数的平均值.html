@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>求数组的奇数个数及奇数的平均值</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//28.（数组）定义一个数组，输入9个任意的数值，求该数组中奇数的个数和奇数的平均值。
+	var arry = [23,25,48,12,59,68,47,25,18,]
+	var newArr = [];
+	var num =0;
+	var avg = 0;
+	for(var i = 0;i<arry.length;i++){
+		if(arry[i]%2 != 0){
+			newArr.push(arry[i]);
+			//console.log(arry[i])
+		}
+	}
+	//console.log(newArr)
+	
+	for(var j =0;j<newArr.length;j++){
+		num += parseInt(newArr[j]);
+	}
+	avg = num / newArr.length;
+	
+	document.write('数组中奇数的个数为：' + newArr.length +';奇数的平均值为：'+ avg)
+</script>

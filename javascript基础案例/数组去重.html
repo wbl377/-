@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数组去重</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	//1.最原始的办法  ---- 双重循环
+	var array = [1,1,'1','1'];
+	
+	function unique(array){
+		//res 用来存储结果
+		var res = [];
+		for (var i=0;i<array.length;i++) {
+			for (var j=0;j<res.length;j++) {
+				if(array[i] === res[j]){
+					break;
+				}	
+			}
+			//如果array[i]是惟一的，执行完循环，j等于resLen
+			if(j === res.length){
+				res.push(array[i])
+			}
+		}
+		return res;	
+	}
+	console.log(unique(array))
+	
+	
+	//2 利用indexOf 来简化内部的循环
+	var arr = [2,2,'2','2',2];
+	
+	function only(arr){
+		var res = [];
+		for (var i = 0; i < arr.length; i++) {
+			if(res.indexOf(arr[i]) === -1){
+				res.push(arr[i])
+			}
+		}
+		return res;
+	}
+    
+    console.log(only(arr))
+    
+    
+    //排序后去重的代码
+    var arrData = [3,3,3];
+    
+    function arrOnly(arrData){
+    	var res = [];
+    	var sortArr = arrData.sort();
+    	var seen;
+    	for(var i=0;i<arrData.length;i++){
+    		if(!i || seen !== arrData[i] ){
+    			res.push(arrData[i])
+    		}
+    		seen = arrData[i]
+    	}
+    	return res
+    }
+    
+    console.log(arrOnly(arrData))
+	
+</script>

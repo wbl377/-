@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>利用冒泡排序给数组倒序排列</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//31.（数组）使用冒泡排序法将一个数组进行倒序排列。
+	var arr = [2,54,85,95,56,69];
+	for(var i=0;i<arr.length;i++){
+		for(var j=i+1;j<arr.length;j++){
+			if(arr[i] < arr[j]){
+				var temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+			}
+		}
+	}
+	document.write(arr);
+</script>

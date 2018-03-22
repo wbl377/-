@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>对称数字</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	//16.（循环，逻辑分析）输入一个小于10的正整数（比如5），输出如下图案：
+	//55555
+	//4444
+	//333
+	//22
+	//1
+	//22
+	//333
+	//4444
+	//55555
+	
+	var n = 7;
+	for(var i=n;i>0;i--){
+		for(var j=1;j<=i;j++){
+			document.write(i);
+		}
+		document.write('<br>')
+	}
+	for(var k=2;k<=n;k++){
+		for(var t=1;t<=k;t++){
+			document.write(k);
+		}
+		document.write('<br>')
+	}
+</script>

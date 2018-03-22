@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>求任意两个数的最大公约数</title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	//20（函数）定义一个函数，该函数可以求两个正数的最大公约数。
+	
+	function gys(num1,num2){
+		var s=0;
+		for(var i=1;i<=num1;i++){
+			if(num1%i==0 && num2%i==0){
+				s = i;
+			}	
+		}
+		document.write(s);
+	}
+	gys(20,15);
+</script>
