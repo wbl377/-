@@ -1,0 +1,45 @@
+/*通用样式*/
+body,html,p,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,img{
+	margin:0;
+	padding:0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+a:hover{
+	color:#ff6600;
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+body{
+	font:14px "微软雅黑",Arial;
+	color:#666;
+}
+.wrap{
+	width:1200px;
+	margin:0 auto;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.clear{
+	clear:both;	
+}
+.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.index{
+	overflow: hidden;
+}
+img{
+	display: block;
+	border:none;
+}
+/**************************************通用样式结束************************************/
